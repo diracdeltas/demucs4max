@@ -5,7 +5,7 @@ const done = () => {
   Max.outlet('spleeterDone')
 }
 
-const modelName = 'mdx_extra_q'
+const MODEL_NAME = 'mdx_extra_q'
 
 Max.post(`Loaded the ${path.basename(__filename)} script`)
 // Docker's default path may not be in Max Node's env path
@@ -41,7 +41,7 @@ const showDir = (dir) => {
 }
 
 const runSpleeter = (filename) => {
-  const cmd = `demucs "${filename}"`
+  const cmd = `demucs -n ${MODEL_NAME} "${filename}"`
   Max.outlet('set', `Demucs is running. This will take a while...`)
   Max.post(cmd)
 
@@ -62,7 +62,7 @@ const runSpleeter = (filename) => {
       Max.post(`Spleeter stdout: ${stdout}`)
     }
     const correctFilename = path.basename(filename).split('.').slice(0, -1).join('.')
-    const outputFilename = path.join(__dirname, 'separated', modelName, correctFilename)
+    const outputFilename = path.join(__dirname, 'separated', MODEL_NAME, correctFilename)
     showDir(outputFilename)
     done()
   })
