@@ -35,7 +35,7 @@ brew install python@3.9
 brew link --force python@3.9
 ```
 
-3. to install demucs, enter `python3 -m pip install -U demucs` in the termina..
+3. to install demucs, enter `python3 -m pip install -U demucs` in the terminal.
 
 ## running
 
