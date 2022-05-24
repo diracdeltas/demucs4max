@@ -42,7 +42,7 @@ const showDir = (dir) => {
 
 const runSpleeter = (filename) => {
   const cmd = `demucs "${filename}"`
-  Max.outlet('set', `Demucs is running. This may take a minute...`)
+  Max.outlet('set', `Demucs is running. This will take a while...`)
   Max.post(cmd)
 
   // Calls the spleeter python process
