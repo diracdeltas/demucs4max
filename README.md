@@ -11,6 +11,8 @@ TBD
 
 all instructions were tested with Max 8.1 / Ableton 10.1 and will not work for earlier versions. this is beta software and may not work with all operating systems. 
 
+if you previously set up https://github.com/diracdeltas/spleeter4max/tree/feature/native-spleeter, you should already have python installed so skip to step 3 of the following instructions on your OS.
+
 ### windows steps:
 
 1. install the latest **python 3.9** windows installer from https://www.python.org/downloads/. in the installer, make sure to enable the setting that adds Python to your path and disable the "path length variable limit" option when you get to the end of the install process.
@@ -21,18 +23,19 @@ all instructions were tested with Max 8.1 / Ableton 10.1 and will not work for e
 
 > :white_check_mark: to test, run `echo %pathext%` in CMD.exe and make sure `.JS` is not there
 
-3. open CMD.exe and type `python3 -m pip install -U demucs` (hit enter)
+3. open CMD.exe and type `python -m pip install -U demucs` (hit enter)
 
 ### macOS steps:
 
 1. install homebrew: https://brew.sh/
 
-2. open terminal and install python3/demucs with the following commands:
+2. open terminal and install python3 with the following commands:
 ```
 brew install python@3.9
 brew link --force python@3.9
-python3 -m pip install -U demucs
 ```
+
+3. to install demucs, enter `python3 -m pip install -U demucs` in the termina..
 
 ## running
 
