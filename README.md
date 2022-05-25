@@ -23,7 +23,7 @@ if you previously set up https://github.com/diracdeltas/spleeter4max/tree/featur
 
 > :white_check_mark: to test, run `echo %pathext%` in CMD.exe and make sure `.JS` is not there
 
-3. open CMD.exe and type `python -m pip install -U demucs` (hit enter)
+3. open CMD.exe and type `python -m pip install -U demucs PySoundFile` (hit enter)
 
 ### macOS steps:
 
