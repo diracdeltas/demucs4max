@@ -23,7 +23,7 @@ if you previously set up https://github.com/diracdeltas/spleeter4max/tree/featur
 
 > :white_check_mark: to test, run `echo %pathext%` in CMD.exe and make sure `.JS` is not there
 
-3. open CMD.exe and type `python -m pip install -U demucs PySoundFile` (hit enter)
+3. open CMD.exe and type `python -m pip install demucs PySoundFile` (hit enter)
 
 ### macOS steps:
 
@@ -35,7 +35,7 @@ brew install python@3.9
 brew link --force python@3.9
 ```
 
-3. to install demucs, enter `python3 -m pip install -U demucs` in the terminal.
+3. to install demucs, enter `python3 -m pip install demucs` in the terminal.
 
 ## running
 
