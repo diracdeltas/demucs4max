@@ -3,17 +3,13 @@
 ableton max device for separating a clip into stems (vocals, bass, drums,
 other) using https://github.com/facebookresearch/demucs.
 
-## download link
-
-TBD
-
-## before you start
+## quickstart
 
 all instructions were tested with Max 8.1 / Ableton 10.1 and will not work for earlier versions. this is beta software and may not work with all operating systems. 
 
-if you previously set up https://github.com/diracdeltas/spleeter4max/tree/feature/native-spleeter, you should already have python installed so skip to step 3 of the following instructions on your OS.
+if you previously set up https://github.com/diracdeltas/spleeter4max/tree/feature/native-spleeter, **skip to step 3 of the following instructions for your OS** because you should already have python installed.
 
-### windows steps:
+### on windows:
 
 1. install the latest **python 3.9** windows installer from https://www.python.org/downloads/. in the installer, make sure to enable the setting that adds Python to your path and disable the "path length variable limit" option when you get to the end of the install process.
 
@@ -25,7 +21,10 @@ if you previously set up https://github.com/diracdeltas/spleeter4max/tree/featur
 
 3. open CMD.exe and type `python -m pip install demucs PySoundFile` (hit enter)
 
-### macOS steps:
+> :white_check_mark: to test, run `where demucs` in CMD.exe; it should show a location
+
+
+### on macOS:
 
 1. install homebrew: https://brew.sh/
 
@@ -37,16 +36,19 @@ brew link --force python@3.9
 
 3. to install demucs, enter `python3 -m pip install demucs` in the terminal.
 
+> :white_check_mark: to test, run `which demucs` in CMD.exe; it should show a location
+
+
 ## running
 
-1. unzip demucs.zip and add the `demucs/` folder to your Places menu in Ableton
+1. unzip [demucs.zip](https://github.com/diracdeltas/demucs4max/releases/download/v0.1/demucs.zip) and add the `demucs/` folder to your Places menu in Ableton
 2. put `demucs.amxd` onto any audio channel
 3. select any audio clip in Ableton by clicking on it
 4. press the start button in the demucs device and wait.
 
-## troubleshooting and FAQs
+## troubleshooting
 
-TBD
+if you run into issues, see [here](https://github.com/diracdeltas/spleeter4max/tree/feature/native-spleeter#it-not-working-and-i-cant-figure-out-why) for instructions to get the full error message in the Max console. you can file a bug report [here](https://github.com/diracdeltas/demucs4max/issues/new).
 
 ## license (MIT)
 
