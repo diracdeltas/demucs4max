@@ -7,30 +7,37 @@ other) using https://github.com/facebookresearch/demucs.
 
 all instructions were tested with Max 8.1 / Ableton 10.1 and will not work for earlier versions. this is beta software and may not work with all operating systems. 
 
-if you previously set up https://github.com/diracdeltas/spleeter4max/tree/feature/native-spleeter, **skip to step 3 of the following instructions for your OS** because you should already have python installed.
-
 ### on windows:
 
-1. install the latest **python 3.9** windows installer from https://www.python.org/downloads/. in the installer, make sure to enable the setting that adds Python to your path and disable the "path length variable limit" option when you get to the end of the install process.
+if you previously set up https://github.com/diracdeltas/spleeter4max/tree/feature/native-spleeter, **skip to step 4.**
+
+1. install ffmpeg following the instructions in https://github.com/diracdeltas/spleeter4max/wiki/Installing-ffmpeg-on-Windows.
+
+> :white_check_mark: to test, run `where ffmpeg` in CMD.exe; it should show a location
+
+2. install the latest **python 3.9** windows installer from https://www.python.org/downloads/. in the installer, make sure to enable the setting that adds Python to your path and disable the "path length variable limit" option when you get to the end of the install process.
 
 > :white_check_mark: to test, run `python -V` or `py -V` in CMD.exe, if there is no output or something other than `Python 3.9.X` then something is wrong
 
-2. open windows environment variable editor and remove `.JS;` from PATHEXT follwing [these instructions](https://web.archive.org/web/20201111203134/https://support.shotgunsoftware.com/hc/en-us/articles/114094235653-Setting-global-environment-variables-on-Windows). on some systems you may need to restart for these changes to take effect.
+3. open windows environment variable editor and remove `.JS;` from PATHEXT follwing [these instructions](https://web.archive.org/web/20201111203134/https://support.shotgunsoftware.com/hc/en-us/articles/114094235653-Setting-global-environment-variables-on-Windows). on some systems you may need to restart for these changes to take effect.
 
 > :white_check_mark: to test, run `echo %pathext%` in CMD.exe and make sure `.JS` is not there
 
-3. open CMD.exe and type `python -m pip install demucs PySoundFile` (hit enter)
+4. open CMD.exe and type `python -m pip install demucs PySoundFile` (hit enter)
 
 > :white_check_mark: to test, run `where demucs` in CMD.exe; it should show a location
 
 
 ### on macOS:
 
+if you previously set up https://github.com/diracdeltas/spleeter4max/tree/feature/native-spleeter, **skip to step 3.**
+
 1. install homebrew: https://brew.sh/
 
 2. open terminal and install python3 with the following commands:
 ```
 brew install python@3.9
+brew install ffmpeg
 brew link --force python@3.9
 ```
 
