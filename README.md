@@ -44,7 +44,11 @@ brew link --force python@3.9
 1. unzip [demucs.zip](https://github.com/diracdeltas/demucs4max/releases/download/v0.1/demucs.zip) and add the `demucs/` folder to your Places menu in Ableton
 2. put `demucs.amxd` onto any audio channel
 3. select any audio clip in Ableton by clicking on it
-4. press the start button in the demucs device and wait.
+4. press the start button in the demucs device and wait. this will take a long time the first time, probably many minutes, so i recommend separating a short audio clip to start.
+5. if demucs has succeeded, it should automatically open the folder containing the stems. if not you can find them in the Max device location under a directory named `separated/`:
+
+<img width="341" alt="separated results" src="https://user-images.githubusercontent.com/549654/170402865-5f4ef11c-60c9-4c83-85c2-6597a9a25894.png">
+
 
 ## troubleshooting
 
