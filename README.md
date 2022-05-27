@@ -48,6 +48,8 @@ brew link --force python@3.9
 
 ## running
 
+Note for MacOS M1 users: This device may not work if you are running Ableton in Rosetta.
+
 1. unzip [demucs.zip](https://github.com/diracdeltas/demucs4max/releases/download/v0.1/demucs.zip) and add the `demucs/` folder to your Places menu in Ableton
 2. put `demucs.amxd` onto any audio channel
 3. select any audio clip in Ableton by clicking on it
